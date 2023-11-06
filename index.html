@@ -27,16 +27,16 @@
     </section>
 
 
-    <section id="hero" class="col-2">
+    <section id="hero" class="col-2 backhero">
         <div class="text">
             <div>
-                <h1 style="font-size: 3rem;">CUKIERNIA AN-KA<br></h1>
+                <h1 style="font-size: 5rem;">CUKIERNIA AN-KA<br></h1>
             </div>
-            <div class="underline">
+            <div class="underline" style="font-size: 2rem; margin: 1em">
                 <p>Słodkości na każdą okazję<br> od 1998 r.</p>
             </div>
         </div>
-        <div class="img"><img src="./src/upload/2.png" style="width: 300px; height: 300px;"></div>
+        <div class="img"></div>
     </section>
 
 
@@ -116,4 +116,16 @@
             x.className = "with-topnav";
         }
     }
+</script>
+<script>
+    var images = [ './src/upload/1.png', './src/upload/2.png', './src/upload/3.png', './src/upload/7.png', './src/upload/11.png', './src/upload/13.png', './src/upload/9.png', './src/upload/5.png', './src/upload/8.png', './src/upload/10.png'];
+    var index = 1;
+    var heroSection = document.getElementById('hero');
+
+    function changeBackground() {
+        heroSection.style.backgroundImage = 'linear-gradient(to right, white , transparent), url('+images[index]+')';
+        index = (index + 1) % images.length;
+    }
+
+    setInterval(changeBackground, 5500);
 </script>
