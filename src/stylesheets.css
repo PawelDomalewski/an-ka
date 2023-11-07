@@ -123,7 +123,7 @@
     }
 
     .with-topnav.responsive {
-        position: static;
+        position: sticky;
         background-image: url(/uploads/Main\ screen.png);
         background-position: -986px 0px;
         background-repeat: no-repeat;
