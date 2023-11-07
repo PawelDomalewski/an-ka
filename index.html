@@ -27,8 +27,8 @@
     </section>
 
 
-    <section id="hero" class="col-2 backhero">
-        <div class="text">
+    <section id="hero" class="col-2">
+        <div class="text1">
             <div>
                 <h1 style="font-size: 5rem;">CUKIERNIA AN-KA<br></h1>
             </div>
@@ -36,7 +36,7 @@
                 <p>Słodkości na każdą okazję<br> od 1998 r.</p>
             </div>
         </div>
-        <div class="img"></div>
+        <div class="backhero" id="backgroundHero"></div>
     </section>
 
 
@@ -118,12 +118,12 @@
     }
 </script>
 <script>
-    var images = [ './src/upload/1.png', './src/upload/2.png', './src/upload/3.png', './src/upload/7.png', './src/upload/11.png', './src/upload/13.png', './src/upload/9.png', './src/upload/5.png', './src/upload/8.png', './src/upload/10.png'];
+    var images = ['./src/upload/1.png', './src/upload/2.png', './src/upload/3.png', './src/upload/7.png', './src/upload/11.png', './src/upload/13.png', './src/upload/9.png', './src/upload/5.png', './src/upload/8.png', './src/upload/10.png'];
     var index = 1;
-    var heroSection = document.getElementById('hero');
+    var heroSection = document.getElementById('backgroundHero');
 
     function changeBackground() {
-        heroSection.style.backgroundImage = 'linear-gradient(to right, white , transparent), url('+images[index]+')';
+        heroSection.style.backgroundImage = 'linear-gradient(to right, white , transparent), url(' + images[index] + ')';
         index = (index + 1) % images.length;
     }
 
