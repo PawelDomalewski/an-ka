@@ -231,6 +231,7 @@ button:hover,
     .col-2 {
         flex-direction: column;
     }
+
     .col-2:nth-child(odd) {
         flex-direction: column-reverse;
     }
