@@ -1,8 +1,8 @@
 :root {
-    --main-color: #39170d;
+    --main-color: #4e1f12;
     --accent-color: #874236;
     --btn-bg: rgb(219, 29, 29);
-    --shadowbox: rgb(32, 29, 29);
+    --shadowbox: #4e1f12;
 }
 
 * {
@@ -163,7 +163,8 @@
     justify-content: center;
 }
 
-button {
+button,
+.secondButton:hover {
     padding: 1em;
     margin: 0.5em;
     background-color: var(--btn-bg);
@@ -171,14 +172,17 @@ button {
     border: solid 2px var(--btn-bg);
     cursor: pointer;
     transition: 0.3s;
+    border-radius: 25px;
 }
 
-button:hover {
+button:hover,
+.secondButton {
     background-color: white;
     color: var(--btn-bg);
     border-color: var(--btn-bg);
     border-style: solid;
 }
+
 
 #hero {
     position: relative;
@@ -222,6 +226,13 @@ button:hover {
         padding: 1em 0em;
         width: 100%;
         background-color: var(--backgroundcolor);
+    }
+
+    .col-2 {
+        flex-direction: column;
+    }
+    .col-2:nth-child(odd) {
+        flex-direction: column-reverse;
     }
 
 
