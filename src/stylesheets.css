@@ -81,37 +81,6 @@
     transform: translate(0, -11px) rotate(45deg);
 }
 
-@media screen and (max-width: 960px) {
-
-    .with-topnav a,
-    .logo-full {
-        display: none;
-    }
-
-    .mobile-menu-toggle,
-    .logo-mobile,
-    .with-topnav {
-        display: block;
-    }
-
-    .with-topnav.responsive {
-        position: sticky;
-        background-image: url(/uploads/Main\ screen.png);
-        background-position: -986px 0px;
-        background-repeat: no-repeat;
-        background-size: auto;
-    }
-
-    .with-topnav.responsive a {
-        float: left;
-        color: var(--second-color);
-        display: block;
-        text-align: center;
-        padding: 1em 0em;
-        width: 100%;
-        background-color: var(--backgroundcolor);
-    }
-}
 
 .backhero {
     /*padding: 20em 0em 20em 0em;*/
@@ -130,13 +99,18 @@
 
 .text1 {
     position: relative;
-    margin: 240px 50em 410px 0px;
+    padding: 15em 0em 20em 0em;
     top: 0;
+    right: 25%;
 }
 
 @keyframes fadein {
     0% {
         opacity: 0;
+    }
+
+    25% {
+        opacity: 1;
     }
 
 
@@ -152,6 +126,7 @@
         opacity: 0;
     }
 }
+
 .col-2 {
     display: flex;
     flex-direction: row;
@@ -203,4 +178,51 @@ button:hover {
     color: var(--btn-bg);
     border-color: var(--btn-bg);
     border-style: solid;
+}
+
+#hero {
+    position: relative;
+}
+
+
+@media screen and (max-width: 960px) {
+
+    .text1 {
+        position: static;
+        width: 100%;
+        top: 0;
+        right: 0;
+        padding: 10em 0em 15em 0em;
+    }
+
+    .with-topnav a,
+    .logo-full {
+        display: none;
+    }
+
+    .mobile-menu-toggle,
+    .logo-mobile,
+    .with-topnav {
+        display: block;
+    }
+
+    .with-topnav.responsive {
+        position: sticky;
+        background-image: url(/uploads/Main\ screen.png);
+        background-position: -986px 0px;
+        background-repeat: no-repeat;
+        background-size: auto;
+    }
+
+    .with-topnav.responsive a {
+        float: left;
+        color: var(--second-color);
+        display: block;
+        text-align: center;
+        padding: 1em 0em;
+        width: 100%;
+        background-color: var(--backgroundcolor);
+    }
+
+
 }
