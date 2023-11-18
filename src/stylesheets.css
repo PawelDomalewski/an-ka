@@ -270,7 +270,9 @@ button:hover,
     position: relative;
 }
 
-#o-nas {
+#o-nas,
+#nowosci,
+#opinie {
     padding: 5em 0em;
 }
 
@@ -284,6 +286,7 @@ button:hover,
 #o-nas img {
     border-radius: 25px;
     filter: drop-shadow(5px 5px 5px grey);
+    max-width: min-content;
 }
 
 #opinie,
@@ -301,11 +304,12 @@ button:hover,
     max-width: min-content;
 }
 
-ul > li {
+li {
     width: 100%;
     font-size: 1.5rem;
     line-height: 2em;
     font-family: 'Noto Serif', sans-serif;
+    list-style: none;
 }
 
 
@@ -336,7 +340,7 @@ ul > li {
     }
 
     .img {
-        max-width: 300px;
+        max-width: max-content;
     }
 
     .text1 {
