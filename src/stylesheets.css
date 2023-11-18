@@ -249,7 +249,7 @@ button:hover,
 
 .opinia::before {
     content: "";
-    background: url(./src/upload/quote.png) top left no-repeat;
+    background: url(./upload/quote.png) top left no-repeat;
     display: block;
     position: absolute;
     width: 120px;
