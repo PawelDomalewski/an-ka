@@ -4,6 +4,7 @@
     --btn-bg: rgb(219, 29, 29);
     --shadowbox: #4e1f12;
     --bg-color-1: #f1f6fa;
+    --txt-color-1: #8c8275;
 }
 
 * {
@@ -18,8 +19,10 @@ a {
     font-family: 'Lovelo', sans-serif;
 }
 
-p {
+p,
+li {
     font-family: 'Noto Serif', sans-serif;
+    color: var(--txt-color-1);
 }
 
 
@@ -242,6 +245,7 @@ button:hover,
 .opinia p {
     margin: 10px;
     text-align: center;
+    font-size: 1.25em;
 }
 
 .opinia::before {
@@ -253,12 +257,14 @@ button:hover,
     height: 100px;
     transform: translate(-134px, -107px);
     transform-origin: 60px 50px;
+    opacity: 0.50;
 }
 
 .map-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 50%;
 }
 
 .map-container div {
