@@ -140,6 +140,10 @@ li {
     flex-direction: column;
 }
 
+.text1 > div > h1 {
+    font-size: 5rem;
+}
+
 @keyframes fadein {
     0% {
         opacity: 0;
@@ -346,6 +350,10 @@ li {
     iframe {
         width: 125%;
         height: 125%;
+    }
+
+    .text1 > div > h1 {
+        font-size: 4rem;
     }
 
     .img {
