@@ -220,6 +220,11 @@ button:hover,
     border-style: solid;
 }
 
+.social {
+    display: ;
+    align-items: end;
+}
+
 .opinie-wrapper {
     display: flex;
     justify-content: space-between;
