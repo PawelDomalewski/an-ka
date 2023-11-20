@@ -12,6 +12,7 @@
     color: var(--main-color);
     margin: 0px;
     scroll-behavior: smooth;
+    font-display: swap;
 }
 
 h1,
