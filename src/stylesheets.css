@@ -291,24 +291,31 @@ button:hover,
     padding: 2rem 0;
 }
 
+.mt-3 {
+    margin-top: 1.5rem;
+}
+
 #hero {
     position: relative;
 }
 
 #o-nas,
 #nowosci,
-#opinie {
+#opinie,
+#produkty {
     padding: 5em 0em;
 }
 
 #o-nas p,
-#nowosci p {
+#nowosci p,
+#produkty p {
     width: 50%;
     font-size: 1.5rem;
     line-height: 1.5em;
 }
 
-#o-nas img {
+#o-nas img,
+#produkty img {
     border-radius: 25px;
     filter: drop-shadow(5px 5px 5px grey);
     max-width: 80vh;
@@ -328,6 +335,19 @@ button:hover,
 
 #nowosci img {
     max-width: min-content;
+}
+
+#nowosci li,
+#produkty li {
+    background-image: url(./upload/li-coffe.png);
+    padding-left: 1.5em;
+    margin: 0;
+    list-style: none;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 32px;
+    width: 22%;
+    text-align: left;
 }
 
 li {
