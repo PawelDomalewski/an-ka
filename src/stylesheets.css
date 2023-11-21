@@ -49,7 +49,7 @@ li {
     padding: 1em;
     text-decoration: none;
     width: auto;
-    font-size: x-large;
+    font-size: 1.25em;
 }
 
 
@@ -180,7 +180,8 @@ li {
 }
 
 .text,
-.img {
+.img,
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -192,6 +193,14 @@ li {
     display: flex;
     flex-direction: column;
     text-align: center;
+}
+
+.img {
+    background-image: url(./upload/8.webp);
+    background-position:center;
+    height: 80vh;
+    border-radius: 25px;
+    filter: drop-shadow(5px 5px 5px grey);
 }
 
 .underline {
@@ -293,13 +302,14 @@ button:hover,
 #nowosci p {
     width: 50%;
     font-size: 1.5rem;
-    line-height: 2em;
+    line-height: 1.5em;
 }
 
 #o-nas img {
     border-radius: 25px;
     filter: drop-shadow(5px 5px 5px grey);
-    max-width: min-content;
+    max-width: 80vh;
+    max-height: fit-content;
 }
 
 #opinie,
@@ -357,7 +367,7 @@ li {
     }
 
     .img {
-        max-width: max-content;
+        width: 100%;
     }
 
     .text1 {
