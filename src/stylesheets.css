@@ -113,6 +113,9 @@ li {
     text-align: center;
     font-size: 2rem;
     margin: 1em;
+    background-color: rgba(255, 255, 255, 0.603);
+    padding: 5px;
+    border-radius: 5px;
 }
 
 .backhero {
@@ -140,7 +143,7 @@ li {
     flex-direction: column;
 }
 
-.text1 > div > h1 {
+.text1>div>h1 {
     font-size: 5rem;
 }
 
@@ -181,7 +184,7 @@ li {
 
 .text,
 .img,
-.container {
+.ciacho {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -195,9 +198,9 @@ li {
     text-align: center;
 }
 
-.img {
+.ciacho {
     background-image: url(./upload/8.webp);
-    background-position:center;
+    background-position: center;
     height: 80vh;
     border-radius: 25px;
     filter: drop-shadow(5px 5px 5px grey);
@@ -357,13 +360,14 @@ li {
 
 @media screen and (max-width: 960px) {
 
+
     iframe {
         width: 125%;
         height: 125%;
     }
 
-    .text1 > div > h1 {
-        font-size: 4rem;
+    .text1>div>h1 {
+        font-size: 3rem;
     }
 
     .img {
