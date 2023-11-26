@@ -113,9 +113,7 @@ li {
     text-align: center;
     font-size: 2rem;
     margin: 1em;
-    background-color: rgba(255, 255, 255, 0.603);
     padding: 5px;
-    border-radius: 5px;
 }
 
 .backhero {
@@ -130,6 +128,10 @@ li {
     height: 100%;
     z-index: -1;
     /*animation: fadein 5500ms ease-in-out infinite;*/
+}
+
+#backgroundHero {
+    background-image: linear-gradient(to right, white, transparent), url(/src/upload/11.webp);
 }
 
 .text1 {
@@ -302,20 +304,24 @@ button:hover,
 #o-nas,
 #nowosci,
 #opinie,
-#produkty {
+#produkty,
+#wspolpraca {
     padding: 5em 0em;
 }
 
 #o-nas p,
 #nowosci p,
-#produkty p {
+#produkty p,
+#wspolpraca p,
+#kontakt p {
     width: 50%;
     font-size: 1.5rem;
     line-height: 1.5em;
 }
 
 #o-nas img,
-#produkty img {
+#produkty img,
+#wspolpraca img {
     border-radius: 25px;
     filter: drop-shadow(5px 5px 5px grey);
     max-width: 80vh;
@@ -350,6 +356,7 @@ button:hover,
     text-align: left;
 }
 
+
 li {
     width: 100%;
     font-size: 1.5rem;
@@ -378,8 +385,60 @@ li {
     background: var(--main-color);
 }
 
+.bg-img {
+    background-image: url(/src/upload/3.webp);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: antiquewhite;
+    background-size: cover;
+    margin: 0;
+    height: 60vh;
+    z-index: 1;
+    padding: 5em 0em;
+}
+
+#kontakt p {
+    color: white;
+}
+
+#kontakt h1 {
+    color: #ff985f;
+    border-bottom: solid 3px #ffe1cd;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer {
+    padding: 5em 0em;
+    background-color: #7b6248;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+}
+
+.footer img {
+    width: 25%;
+}
+
+.footer div:nth-child(odd) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer div:nth-child(2n) {
+    background-color: #ffe1cd;
+    padding: 5em 2px;
+}
+
 @media screen and (max-width: 960px) {
 
+    .fancy-font {
+        color: var(--main-color);
+    }
 
     iframe {
         width: 125%;
@@ -445,9 +504,34 @@ li {
 
     .col-2,
     .opinie-wrapper,
-    .map-container {
+    .map-container,
+    .footer {
         flex-direction: column;
         align-items: center;
+    }
+
+    #o-nas p,
+    #nowosci p,
+    #produkty p,
+    #wspolpraca p,
+    #kontakt p,
+    #nowosci li {
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    #nowosci li,
+    #produkty li {
+        line-height: 3rem;
+        width: 80%;
+        text-align: left;
+        padding-left: 2em;
+    }
+
+    .footer div:nth-child(2n) {
+        background-color: #ffe1cd;
+        padding: 2px 5em;
+        margin: 1rem 0rem;
     }
 
     .col-2:nth-child(odd) {
@@ -456,8 +540,12 @@ li {
 
     .opinie-wrapper,
     #o-nas p,
-    #nowosci p {
-        width: 100%;
+    #nowosci p,
+    #wspolpraca p {
+        width: 90%;
     }
 
+    #backgroundHero {
+        background-image: linear-gradient(to left, rgba(255, 255, 255, 0.40), rgba(255, 255, 255, 0.4)), url(/src/upload/11.webp);
+    }
 }
