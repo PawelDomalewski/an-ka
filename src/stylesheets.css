@@ -386,7 +386,7 @@ li {
 }
 
 .bg-img {
-    background-image: url(/src/upload/3.webp);
+    background-image: url(./upload/3.webp);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
