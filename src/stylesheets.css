@@ -131,7 +131,7 @@ li {
 }
 
 #backgroundHero {
-    background-image: linear-gradient(to right, white, transparent), url(/src/upload/11.webp);
+    background-image: linear-gradient(to right, white, transparent), url(./upload/11.webp);
 }
 
 .text1 {
@@ -546,6 +546,6 @@ li {
     }
 
     #backgroundHero {
-        background-image: linear-gradient(to left, rgba(255, 255, 255, 0.40), rgba(255, 255, 255, 0.4)), url(/src/upload/11.webp);
+        background-image: linear-gradient(to left, rgba(255, 255, 255, 0.40), rgba(255, 255, 255, 0.4)), url(./upload/11.webp);
     }
 }
