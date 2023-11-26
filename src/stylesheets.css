@@ -535,8 +535,9 @@ li {
         margin: 1rem 0rem;
     }
 
-    .col-2:nth-child(odd) {
-        flex-direction: column-reverse;
+    .col-2:nth-child(odd), 
+    #onas {
+        flex-direction: column;
     }
 
     .opinie-wrapper,
