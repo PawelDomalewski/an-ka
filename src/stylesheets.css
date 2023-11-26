@@ -203,6 +203,7 @@ li {
 .ciacho {
     background-image: url(./upload/8.webp);
     background-position: center;
+    background-repeat: no-repeat;
     height: 80vh;
     border-radius: 25px;
     filter: drop-shadow(5px 5px 5px grey);
