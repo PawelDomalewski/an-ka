@@ -367,25 +367,6 @@ li {
 }
 
 
-::-webkit-scrollbar {
-    width: 15px;
-}
-
-::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 8px grey;
-
-}
-
-::-webkit-scrollbar-thumb {
-    background: var(--accent-color);
-    border-radius: 1px;
-    box-shadow: inset 0 0 8px var(--main-color);
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: var(--main-color);
-}
-
 .bg-img {
     background-image: url(./upload/3.webp);
     background-attachment: fixed;
