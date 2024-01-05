@@ -187,7 +187,8 @@
     <section class="footer" id="kontakt">
         <div>
             <h1 class="underline">KONTAKT</h1>
-            <p class="text">81-327 Gdynia<br> ul. Wolności 26a <br> tel: (58) 621-12-48<br> 785-99-12-48<br> e-mail: biuro@an-ka.eu
+            <p class="text">81-327 Gdynia<br> ul. Wolności 26a <br> tel: (58) 621-12-48<br> 785-99-12-48<br> e-mail:
+                biuro@an-ka.eu
             </p>
         </div>
         <div></div>
@@ -231,3 +232,27 @@ location.reload();
 }
 });*/
 </script>
+<script> window.onscroll = function () { myPopUp() };
+
+    let popUp = document.getElementById("popup");
+    var ClosePopUp = localStorage.getItem("popup") || false;
+
+    function myPopUp() {
+        if (document.documentElement.scrollTop > 2000 && ClosePopUp == false) {
+            popUp.style.display = "block";
+            ClosePopUp = true;
+        }
+        var span = document.getElementsByClassName("close");
+        for (i = 0; i < span.length; i++) {
+            span[i].onclick = function () {
+                popUp.style.display = "none";
+                localStorage.setItem("popup", true);
+            }
+        }
+        window.onclick = function (event) {
+            if (event.target == popUp) {
+                popUp.style.display = "none";
+                localStorage.setItem("popup", true);
+            }
+        }
+    }</script>
