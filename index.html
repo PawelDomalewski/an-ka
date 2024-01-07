@@ -197,52 +197,12 @@
                 wpisując "PRACA"</p>
         </div>
     </section>
-    <section id="reaven" class="modal">
-        <div class="char-details">
+    <section id="popup" class="modal">
+        <div class="social-pop">
             <span class="close">&times;</span>
-            <div class="flex-content">
-                <div class="flex-1"><img src="./images/Kapłan Small.png"></div>
-                <div class="flex-2">
-                    <table>
-                        <tr>
-                            <th colspan="2">Reaven</th>
-                        </tr>
-                        <tr>
-                            <td>Klasa</td>
-                            <td>Kapłan</td>
-                        </tr>
-                        <tr>
-                            <td>Rasa</td>
-                            <td>Człowiek</td>
-                        </tr>
-                        <tr>
-                            <td>Siła</td>
-                            <td>16</td>
-                        </tr>
-                        <tr>
-                            <td>Zręczność</td>
-                            <td>8</td>
-                        </tr>
-                        <tr>
-                            <td>Kondycja</td>
-                            <td>16</td>
-                        </tr>
-                        <tr>
-                            <td>Mądrość</td>
-                            <td>8</td>
-                        </tr>
-                        <tr>
-                            <td>Inteligencja</td>
-                            <td>8</td>
-                        </tr>
-                        <tr>
-                            <td>Charyzma</td>
-                            <td>16</td>
-                        </tr>
-                    </table>
-                </div>
+            <div class="col-2 bg-color-1">
+                
             </div>
-            </p>
         </div>
     </section>
 
@@ -284,7 +244,7 @@ location.reload();
 <script> window.onscroll = function () { myPopUp() };
 
     let popUp = document.getElementById("popup");
-    var ClosePopUp = localStorage.getItem("popup") || false;
+    var ClosePopUp = /*localStorage.getItem("popup") ||*/ false;
 
     function myPopUp() {
         if (document.documentElement.scrollTop > 2000 && ClosePopUp == false) {
