@@ -516,11 +516,11 @@ li {
         background-color: var(--backgroundcolor);
     }
 
-    .with-topnav.responsive a:nth-child(odd) {
+    /*.with-topnav.responsive a:nth-child(odd) {
         padding: 0px;
         background-color: var(--main-color);
         height: 2px;
-    }
+    }*/
 
     .col-2,
     .opinie-wrapper,
