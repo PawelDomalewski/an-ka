@@ -358,6 +358,7 @@ button:hover,
     background-size: 32px;
     width: 22%;
     text-align: left;
+    text-wrap: nowrap;
 }
 
 
