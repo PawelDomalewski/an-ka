@@ -25,6 +25,10 @@ li {
     color: var(--txt-color-1);
 }
 
+img {
+    margin: 0.5rem 0;
+}
+
 
 .bg-color-1 {
     background-color: var(--bg-color-1);
@@ -208,6 +212,7 @@ li {
     height: 80vh;
     border-radius: 25px;
     filter: drop-shadow(5px 5px 5px grey);
+    margin: 0.5rem 0;
 }
 
 .underline {
