@@ -419,6 +419,22 @@ li {
     padding: 5em 2px;
 }
 
+.autor {
+    background-color: var(--txt-color-1);
+    text-align: center;
+    font-size: 0.80em;
+}
+
+.autor p {
+    color: black;
+}
+
+.autor a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
 #popup {
     display: none;
     position: fixed;
