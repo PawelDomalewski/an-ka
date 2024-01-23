@@ -66,6 +66,7 @@ img {
 .with-topnav a:last-child {
     padding-right: 0em;
 }
+
 /*
 .with-topnav a:nth-child(odd) {
     padding: 2px;
@@ -460,6 +461,12 @@ li {
 }
 
 @media screen and (max-width: 960px) {
+
+
+    #myTopnav {
+        display: flex;
+        justify-content: space-between;
+    }
 
     .fancy-font {
         color: var(--main-color);
