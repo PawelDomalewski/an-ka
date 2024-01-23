@@ -25,10 +25,6 @@ li {
     color: var(--txt-color-1);
 }
 
-img {
-    margin: 0.5rem 0;
-}
-
 
 .bg-color-1 {
     background-color: var(--bg-color-1);
@@ -81,7 +77,7 @@ img {
 .logo-mobile {
     display: none;
     float: left;
-    padding: 1em;
+    padding: 0.5em;
 }
 
 .mobile-menu-toggle {
@@ -476,6 +472,7 @@ li {
 
     .img {
         width: 100%;
+        margin: 0.5rem 0;
     }
 
     .text1 {
